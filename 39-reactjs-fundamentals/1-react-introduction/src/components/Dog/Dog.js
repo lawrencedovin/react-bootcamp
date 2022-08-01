@@ -1,5 +1,5 @@
-const Dog = (props) => {
-    return <img src={props.src} />
-}
+const Dog = (props) => ( 
+    <img src={props.src} />
+)
 
 export default Dog;

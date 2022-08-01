@@ -1,5 +1,5 @@
 const number = (min=1, max=10) => {
-   return ((Math.random() * (max - min)) + min)
+   return Math.floor((Math.random() * max) + min);
 };
 
 const RandomNumber = (props) => (

@@ -7,8 +7,11 @@ const RandomChoice = ({array}) => {
     return(
         <>
             <h1>All Colors:</h1>
-            <ul>
-                {array.map(color => <li>{color}</li>)}
+            <ul class="colors">
+                {array.map(color => 
+                <li>
+                    <b>{color}</b>
+                </li>)}
             </ul>
             <h1 style={{'color': color}}>Random Color: {color}</h1>
             <button onClick={() => setColor(randomItem(array))}>

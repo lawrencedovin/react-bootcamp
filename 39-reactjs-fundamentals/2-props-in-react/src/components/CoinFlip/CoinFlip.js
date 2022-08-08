@@ -8,7 +8,12 @@ const CoinFlip = ({coinSides=['heads', 'tails']}) => {
         <>
             <h1>Coin Flip:</h1>
             <div class="coin">
-                {coinSide === 'heads' ? "😀" : "🦅"}
+
+                {coinSide === 'heads' ? 
+                    "😀" 
+                    : 
+                    "🦅"
+                }
             </div>
             <button onClick={() => setCoinSide(randomItem(coinSides))}>
                 Flip Coin

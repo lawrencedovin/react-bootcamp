@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './RandomChoice.css';
+import { randomItem } from '../../utils/Utility';
 
-const randomItem = (array) => array[Math.floor(Math.random()*array.length)];
 const RandomChoice = ({array}) => {
     const [color, setColor] = useState(randomItem(array));
     return(

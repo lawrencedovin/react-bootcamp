@@ -1,0 +1,12 @@
+.coin {
+    height: 100px;
+    width: 100px;
+    border-radius: 40rem;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(138, 131, 131, 0.714);
+    font-size: 4rem;
+    color: #000;
+    border: 4px solid #000;
+    margin-bottom: 1.6rem;
+}

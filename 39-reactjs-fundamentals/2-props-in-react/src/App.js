@@ -4,6 +4,7 @@ import Animal from './components/Animal/Animal';
 import RandomChoice from './components/RandomChoice/RandomChoice';
 import CoinFlip from './components/CoinFlip/CoinFlip';
 import TodosList from './components/TodosList/TodosList';
+import Alert from './components/Alert/Alert';
 
 const todos = [
   {"id": 1, "name": "buy burger"},
@@ -14,12 +15,20 @@ const todos = [
 
 const App = () => (
     <div className="App">
-      <Animal emoji="🦁" name="Lion" sound="roar" />
-      <Animal emoji="🐶" name="Dog" sound="bark" />
-      <Animal emoji="😺" name="Cat" sound="meow" />
-      <RandomChoice array={['red', 'green', 'yellow']} />
-      <CoinFlip />
-      <TodosList array={todos} />
+      <Alert>
+        <Animal emoji="🦁" name="Lion" sound="roar" />
+        <Animal emoji="🐶" name="Dog" sound="bark" />
+        <Animal emoji="😺" name="Cat" sound="meow" />
+      </Alert>
+      <Alert>
+        <RandomChoice array={['red', 'green', 'yellow']} />
+      </Alert>
+      <Alert>
+        <CoinFlip />
+      </Alert>
+      <Alert>
+        <TodosList array={todos} />
+      </Alert>
     </div>
 )
 

@@ -7,9 +7,9 @@ const RandomChoice = ({array}) => {
     return(
         <>
             <h1>All Colors:</h1>
-            <ul class="colors">
+            <ul className="colors">
                 {array.map(color => 
-                <li>
+                <li key={color}>
                     <b>{color}</b>
                 </li>)}
             </ul>

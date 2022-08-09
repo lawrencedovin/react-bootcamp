@@ -5,11 +5,11 @@ const TodosList = ({array}) => {
     return(
         <>
             <h1>Todos:</h1>
-            <ul class="todos">
+            <ul className="todos">
                 {array.map(item => 
-                <li>
+                <li key={item.id}>
                     <input type="checkbox" />
-                    <b>{item}</b>
+                    <b>{item.name}</b>
                 </li>)}
             </ul>
         </>

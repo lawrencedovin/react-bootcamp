@@ -7,7 +7,7 @@ const CoinFlip = ({coinSides=['heads', 'tails']}) => {
     return(
         <>
             <h1>Coin Flip:</h1>
-            <div class="coin">
+            <div className="coin">
 
                 {coinSide === 'heads' ? 
                     "😀" 

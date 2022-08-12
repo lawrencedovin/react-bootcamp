@@ -1,11 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import ShoppingList from './ShoppingList/ShoppingList';
+import items from './items';
 
 function App() {
   return (
     <>
-      <ShoppingList />
+      <ShoppingList items={items} />
     </>
   );
 }

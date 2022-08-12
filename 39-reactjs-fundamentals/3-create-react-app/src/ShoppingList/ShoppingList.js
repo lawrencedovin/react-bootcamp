@@ -1,8 +1,7 @@
 import './ShoppingList.css';
-import items from '../items';
 import ShoppingItem from '../ShoppingItem/ShoppingItem';
 
-function ShoppingList() {
+function ShoppingList({items}) {
   return (
     <ul>
       {items.map(item => 

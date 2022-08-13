@@ -5,7 +5,7 @@ import items from './items';
 function App() {
   return (
     <>
-      <ShoppingList items={items} />
+      <ShoppingList items={items} username="lawrence" />
     </>
   );
 }

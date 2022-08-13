@@ -1,13 +1,13 @@
 import './ShoppingItem.css';
 
-function ShoppingItem({item}) {
+function ShoppingItem({id, image, name, quantity, price}) {
   return (
-      <li key={item.id}>
-        <img src={item.img} alt={item.img} height="100px" />
-        <p>ID: {item.id}</p>
-        <p>name: {item.name}</p>
-        <p>quantity: {item.qty}</p>
-        <p>price: ${item.price * item.qty}</p>
+      <li key={id}>
+        <img src={image} alt={image} height="100px" />
+        <p>ID: {id}</p>
+        <p>name: {name}</p>
+        <p>quantity: {quantity}</p>
+        <p>price: ${price * quantity}</p>
       </li>
   );
 }

@@ -5,7 +5,9 @@ function ShoppingList({items}) {
   return (
     <ul>
       {items.map(item => 
-        <ShoppingItem item={item} />
+        <ShoppingItem id={item.id} name={item.name} image={item.img} 
+                      price={item.price} quantity={item.qty} 
+        />
       )}
     </ul>
   );

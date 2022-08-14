@@ -1,7 +1,7 @@
 import './App.css';
 import ShoppingList from './ShoppingList/ShoppingList';
 import items from './items';
-import logo from './images/space-logo.svg'
+import logo from './images/space-logo.svg';
 
 function App() {
   return (

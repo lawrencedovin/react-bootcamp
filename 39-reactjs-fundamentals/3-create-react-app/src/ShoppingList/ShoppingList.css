@@ -1,7 +1,12 @@
-h1 {
+.shopping__title {
     color: #4845D2;
 }
 
-h2 {
+.shopping__list {
+    display: inline-block;
+    border: rgb(0, 140, 255) inset 4px;
+}
+
+.shopping__total {
     color: #19a564;
 }

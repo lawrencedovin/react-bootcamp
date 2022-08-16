@@ -6,7 +6,7 @@ import logo from './images/space-logo.svg';
 function App() {
   return (
     <>
-      <img src={logo} alt={logo} height="50px" />
+      <img src={logo} alt={logo} className="shopping__logo" />
       <ShoppingList items={items} username="lawrence" />
     </>
   );

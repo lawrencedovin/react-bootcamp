@@ -2,7 +2,7 @@ import './ShoppingItem.css';
 
 function ShoppingItem({id, image, name, quantity, price}) {
   return (
-      <li key={id}>
+      <li key={id} className="shopping__item">
         <img src={image} alt={image} height="100px" />
         <p>ID: {id}</p>
         <p>name: {name}</p>

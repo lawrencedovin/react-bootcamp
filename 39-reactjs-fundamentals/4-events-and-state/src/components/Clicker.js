@@ -6,11 +6,16 @@ const Clicker = ({message, btnText}) => {
         console.log(message);
     }
 
-    const handleScroll = event => {
+    const handleScroll = (event) => {
         console.log('scrollTop: ', event.currentTarget.scrollTop);
         console.log('offsetHeight: ', event.currentTarget.offsetHeight);
     };
 
+    const fireLasers = (e) => {
+        console.log(e.currentTarget);
+        console.log(e.nativeEvent);
+        console.log(e);
+    }
 
     return (
         <>

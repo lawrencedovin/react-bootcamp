@@ -6,7 +6,25 @@ const Clicker = ({message, btnText}) => {
         console.log(message);
     }
 
-    return <button onClick={() => consoleMe(message)}>{btnText}</button>
+    const handleScroll = event => {
+        console.log('scrollTop: ', event.currentTarget.scrollTop);
+        console.log('offsetHeight: ', event.currentTarget.offsetHeight);
+    };
+
+
+    return (
+        <>
+            <button onClick={() => consoleMe(message)}>{btnText}</button>
+            <textarea onScroll={handleScroll} rows="2">
+                adsffadffdsfdsafd
+                adsffadffdsfdsafd
+                adsffadffdsfdsafd
+                adsffadffdsfdsafd
+                adsffadffdsfdsafd
+                adsffadffdsfdsafd
+            </textarea>
+        </>
+    );
 }
 
 export default Clicker;

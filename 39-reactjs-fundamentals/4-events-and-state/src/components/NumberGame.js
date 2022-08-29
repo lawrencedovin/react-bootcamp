@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import generateRandomNumber from "../utils/generateRandomNumber";
+import "./NumberGame.css";
 
 const NumberGame = () => {
     const [guess, setGuess] = useState(0);
@@ -21,7 +22,7 @@ const NumberGame = () => {
 
     return (
         <>
-            <h1>Your Guess: {guess}</h1>
+            <h1 className={hasWon ? "winner" : "not-won"}>Your Guess: {guess}</h1>
             {/* <h1>Random Number: {randomNumber}</h1> */}
             <h1>Answered Correctly? {hasWon ? "Congrats you Won!" : "Incorrect Guess"} </h1>
             <input type="number" min="1" max="10" value={guess} onChange={handleChange}/>

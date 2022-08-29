@@ -19,15 +19,25 @@ const NumberGame = () => {
         guess === randomNumber ? setHasWon(true) : setHasWon(false);
         console.log(`Guess: ${guess} Random Number: ${randomNumber}`);
     }
+    
+    const restartGame = () => {
+        setGuess(0);
+        setRandomNumber(generateRandomNumber);
+        setHasWon(false);
+    }
 
     return (
         <>
             <h1 className={hasWon ? "winner" : "not-won"}>Your Guess: {guess}</h1>
             {/* <h1>Random Number: {randomNumber}</h1> */}
-            <h1>Answered Correctly? {hasWon ? "Congrats you Won!" : "Incorrect Guess"} </h1>
+            <h1>Answered Correctly? {hasWon ? "Congrats you Won! 🎈" : "Incorrect Guess"} </h1>
             <input type="number" min="1" max="10" value={guess} onChange={handleChange}/>
-            <button onClick={checkGuess}>Confirm Guess</button>
-            <button onClick={newRandomNumber}>Generate New Random Number</button>
+            {hasWon 
+                ?
+                <button onClick={restartGame}>New Game</button>
+                :
+                <button onClick={checkGuess}>Confirm Guess</button>
+            }
         </>
     )
 }

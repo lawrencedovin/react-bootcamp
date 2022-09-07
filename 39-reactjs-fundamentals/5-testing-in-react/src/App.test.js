@@ -8,12 +8,13 @@ import App from './App';
 // });
 
 
-// Smoke Tests
+// Smoke Tests: Checks if component renders.
 it("renders without crashing", () => {
   render(<App />);
 });
 
-// Snapshot Tests
+// Snapshot Tests: Checks if rendered HTML has expected result. 
+// ie. values are correctly displayed to the webpage.
 it("matches snapshop", () => {
   const {asFragment} = render(<App />);
   expect (asFragment()).toMatchSnapshot();
